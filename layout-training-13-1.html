@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin:0; padding:0;}
+    #root{
+      width:428px;
+      height:926px;
+      background-color: black;
+
+      display: flex;
+    }
+
+    .container{
+      width:100%;
+      height:60%;
+      background-color:#ccc;
+
+      display: flex;
+      position: relative;
+      top:40%;
+      flex-direction: column;
+
+      border-radius:30px 30px 0px 0px;
+    }
+
+    h1{
+      margin-top:16px;
+      margin-left:16px;
+      color: rgb(150, 150, 150)
+    }
+
+    .box{
+      width:100%;
+      height: 45%;
+      /* border:1px solid blue; */
+      margin-top:20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .box>div{
+      /* width:90%; */
+      /* height:10%; */
+    }
+
+    .box>div{
+      width:396px;
+      height:40px;
+      background-color: white;
+      color: #ccc;
+      border-radius:5px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box>div:nth-child(3){
+      width:150px;
+      position: relative;
+      left:125px;
+      border-radius:30px;
+    }
+
+    .container>div:nth-child(2){
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width:100px;
+      height:10px;
+      margin-top:8px;
+      margin-left:16px;
+    }
+
+    item{
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      background-color:white;
+    }
+    
+    item:nth-child(1){
+      background-color:rgb(150, 150, 150) ;
+    }
+
+    .text-1{
+      /* display:inline-block; */
+      width:100%;
+      height:23%;
+      /* border:1px solid red; */
+      display: flex;
+      position: relative;
+      bottom:50%;
+      flex-direction: column;
+      justify-content:space-between;
+      margin-left:16px;
+      color: rgb(150, 150, 150)
+    }
+
+    .text-2{
+      width:100%;
+      height:23%;
+      /* border:1px solid green; */
+      display: flex;
+      position: absolute;
+      top:55%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .text-2>div{
+      margin-right:16px;
+      color:#4d4d4d;
+    }
+
+    .bar{
+      width:60%;
+      height:1.5%;
+      background-color:#4d4d4d ;
+      border-radius:15px;
+      margin-left:20%;
+    }
+
+  
+
+
+    
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="container">
+      <h1>Lorem ipsum</h1>
+      <div>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+      </div>
+      
+      
+      <div class="box">
+        <div>Lorem ipsum dolor sit amet</div>
+        <div>Lorem ipsum dolor sit amet</div>
+        <div>Start</div>
+      </div>
+
+      <div class="text-1">
+        <div>Lorem ipsum </div>
+        <div>Lorem</div>
+      </div>
+
+      <div class="text-2">
+        <div>Lorem ipsum dolor sit amet consectetur</div>
+        <div>Lorem ipsum dolor</div>
+      </div>
+
+      <div class="bar"></div>
+
+    
+
+
+
+    </div>
+  </div>
+</body>
+</html>
