@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin:0; padding:0;}
+    #root{
+      width:100vw;
+      height:100vh;
+      background-color:#0090da;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .nav{
+      width:15%;
+      height:100%;
+      background-color:#fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+    
+    #wrapper-1{
+      width:8vw;
+      height:60%;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-around;
+    }
+
+    icon{
+      width:8vw;
+      height:8vw;
+      border:1px solid #0090da;
+    }
+
+    #wrapper-2{
+      width:85%;
+      height:100%;
+      display: flex;
+      /* border:1px solid red; */
+      justify-content: center;
+      align-items: center;
+
+      flex-direction: column;
+    }
+
+    .box-1{
+      width:75vw;
+      height:75vw;
+      background-color:#fff;
+    }
+
+
+
+
+    h1{
+      color: #0090da;
+      font-size:3vh;
+      padding:4%;
+    }
+
+    hr{
+      border:0.5px solid #0090da;
+      margin:4%;
+    }
+
+
+    p{
+      font-size:1.5vh;
+      text-align:justify;
+      padding: 4%;
+      /* word-spacing:-5px; 
+      어간 조절 XXX*/
+      margin-top:10%;
+    }
+
+    .box-2{
+      width:75vw;
+      height:75vw;
+      background-color:#fff;
+      margin-top:4%;
+    }
+
+    #plus{
+      width:15vw;
+      height: 15vw;
+      border-radius:50%;
+      border:3px solid #fff;
+      margin-top:4%;
+    }
+
+
+    
+
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="nav">
+      <div id="wrapper-1">
+        <icon></icon>
+        <icon></icon>
+        <icon></icon>
+        <icon></icon>
+        <icon></icon>
+      </div>
+    </div>
+
+    <div id="wrapper-2">
+      <main>
+        <div class="box-1">
+          <h1>Web unit</h1>
+          <hr>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem quaerat id harum reiciendis dolore ex omnis ut facere dicta. Corrupti fugit amet eaque accusantium possimus sint nisi, commodi sed cupiditate eum labore omnis cum minima dignissimos molestias doloremque consequuntur laborum </p>
+        </div>
+
+        <div class="box-2">
+          <h1>Web unit</h1>
+          <hr>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem quaerat id harum reiciendis dolore ex omnis ut facere dicta. Corrupti fugit amet eaque accusantium possimus sint nisi, commodi sed cupiditate eum labore omnis cum minima dignissimos molestias doloremque consequuntur laborum </p>
+
+
+        </div>
+      </main>
+
+      <div id="plus"></div>
+
+
+    </div>
+
+
+  </div>
+  
+</body>
+</html>
