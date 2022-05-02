@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{margin: 0; padding: 0;}
+  #root{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .border{
+    width: 30vw;
+    height: 30vw;
+    border: 0.5px solid black;
+    border-radius: 50%;
+  }
+
+  .circle{
+    width: 26vw;
+    height: 26vw;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 1;
+    position: absolute;
+    left: 22vw;
+  }
+
+  .blur{
+    width: 13vw;
+    height: 13vw;
+    border-radius: 50%;
+    background-color: rgb(175, 175, 175);
+    filter: blur(40px);
+    z-index: 2;
+    position: absolute;
+  }
+
+  .transform{
+    width: 13vw;
+    height: 13vw;
+    border-radius: 30%;
+    background-color: rgb(202, 202, 202);
+    z-index: 3;
+    position: absolute;
+    left: 32vw;
+    transform: rotate(30deg);
+
+  }
+
+  .text{
+    color: #fff;
+    z-index: 4;
+    position: absolute;
+    left: 38vw;
+    font-size: 20px;
+    top:46vh;
+
+  }
+  .button{
+    display: flex;
+    flex-direction: row;
+    width: 2vw;
+    height: 1vw;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 28vh;
+    left: 25vw;
+  }
+
+  .button>div{
+    width: 0.5vw;
+    height: 0.5vw;
+    border-radius: 50%;
+    background-color: rgb(202, 202, 202);
+  }
+
+</style>
+<body>
+  <div id="root">
+    <div class="border"></div>
+    <div class="circle"></div>
+    <div class="blur"></div>
+    <div class="transform"></div>
+    <div class="text">advenced markup</div>
+    <div class="button">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</body>
+</html>
